@@ -15,7 +15,7 @@ class Car
         float $fuelConsumption,
         float $fuelTankVolume
     ) {
-        //@todo
+
     }
 
     public function getId(): int

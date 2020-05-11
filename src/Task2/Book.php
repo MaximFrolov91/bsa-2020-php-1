@@ -6,18 +6,25 @@ namespace App\Task2;
 
 class Book
 {
+    public function __construct(string $title, int $price, int $number)
+    {
+        $this->title = $title;
+        $this->price = $price;
+        $this->number = $number;
+    }
+
     public function getTitle(): string
     {
-        // @todo
+        return $this->title;
     }
 
     public function getPrice(): int
     {
-        // @todo
+        return $this->price;
     }
 
     public function getPagesNumber(): int
     {
-        //@todo
+        return $this->number;
     }
 }

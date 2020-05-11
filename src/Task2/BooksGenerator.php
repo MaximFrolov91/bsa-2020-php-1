@@ -18,13 +18,13 @@ class BooksGenerator
     public function generate(): \Generator
     {
         foreach ($this->libraryBooks as $book) {
-            if($book->getPagesNumber() >= $this->minPagesNumber) {
+            if ($book->getPagesNumber() >= $this->minPagesNumber) {
                 yield $book;
             }
         }
 
         foreach ($this->storeBooks as $book) {
-            if($book->getPrice() < $this->maxPrice) {
+            if ($book->getPrice() < $this->maxPrice) {
                 yield $book;
             }
         }

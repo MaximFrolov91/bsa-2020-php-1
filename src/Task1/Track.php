@@ -6,9 +6,7 @@ namespace App\Task1;
 
 class Track
 {
-    private $lapLength;
-    private $lapsNumber;
-    private $cars = [];
+//    protected array $cars = [];
 
     public function __construct(float $lapLength, int $lapsNumber)
     {
@@ -60,7 +58,6 @@ class Track
 
             $time[$z] = $raceTime;
         }
-
         return $cars[array_search(min($time), $time)];
     }
 }
